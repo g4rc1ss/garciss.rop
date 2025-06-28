@@ -29,9 +29,6 @@ jobs:
         working-directory: ./Garciss.ROP
         run: dotnet test --no-build --verbosity normal
 
-      - name: Install necessary tools
-        run: sudo apt-get update && sudo apt-get install -y xmlstarlet
-
       - name: Set project paths
         run: echo "PROJECT_PATHS=Garciss.ROP/Garciss.ROP/Garciss.ROP.csproj Garciss.ROP/Garciss.ROP.ApiExtensions/Garciss.ROP.ApiExtensions.csproj" >> $GITHUB_ENV
 

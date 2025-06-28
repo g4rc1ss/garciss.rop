@@ -2,7 +2,6 @@
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-        <Version>1.0.0</Version>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <AnalysisLevelDocumentation>latest</AnalysisLevelDocumentation>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
@@ -11,6 +10,9 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 
+    <PropertyGroup>
+    </PropertyGroup>
+    
     <ItemGroup>
         <PackageReference Include="CSharpier.MsBuild" Version="*">
             <PrivateAssets>all</PrivateAssets>
