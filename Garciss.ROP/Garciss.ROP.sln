@@ -6,6 +6,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 		.editorconfig = .editorconfig
+		..\bump-config.json = ..\bump-config.json
+		..\.github\workflows\create-nuget.yml = ..\.github\workflows\create-nuget.yml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Garciss.ROP.ApiExtensions", "Garciss.ROP.ApiExtensions\Garciss.ROP.ApiExtensions.csproj", "{908C0614-A1FA-4CF8-9F02-7D35C2B9EA0D}"
