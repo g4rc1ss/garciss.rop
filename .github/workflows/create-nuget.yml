@@ -36,7 +36,7 @@ jobs:
         run: |
           for proj in $PROJECT_PATHS
           do
-            dotnet pack "$proj" --configuration Release --output ./packages --property:Version=${{ env.NEW_VERSION }}
+            dotnet pack "$proj" --configuration Release --output ./packages
           done
 
       - name: Publish to NuGet
