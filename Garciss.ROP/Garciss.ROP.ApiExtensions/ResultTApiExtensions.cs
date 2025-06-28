@@ -10,6 +10,7 @@ public static class ResultTApiExtensions
         ProblemDetails problems = new()
         {
             Title = "Error(s) found",
+            Status = StatusCodes.Status400BadRequest,
             Detail = "One or more errors occurred",
         };
 
@@ -22,7 +23,7 @@ public static class ResultTApiExtensions
     {
         return result.IsSuccess
             ? Results.Ok(result.Value)
-            : Results.BadRequest(result.ToProblemDetails());
+            : Results.Problem(result.ToProblemDetails());
     }
 
     public static IActionResult ToActionResult<T>(this Result<T> result)
