@@ -18,12 +18,15 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Restore dependencies
+        working-directory: ./Garciss.ROP
         run: dotnet restore
 
       - name: Build
+        working-directory: ./Garciss.ROP
         run: dotnet build --no-restore
 
       - name: Test
+        working-directory: ./Garciss.ROP
         run: dotnet test --no-build --verbosity normal
 
       - name: Install necessary tools
