@@ -24,10 +24,12 @@ public readonly struct Result<T>
 
         Errors = errors;
     }
+    
+    public static Result<T> Success() => new();
+    public static Result<T> Failure(Error error) => new([error]);
+    public static Result<T> Failure(ImmutableArray<Error> errors) => new(errors);
 
     public static implicit operator Result<T>(T value) => new(value);
-
     public static implicit operator Result<T>(Error error) => new([error]);
-
     public static implicit operator Result<T>(ImmutableArray<Error> errors) => new(errors);
 }
